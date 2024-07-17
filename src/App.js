@@ -18,7 +18,7 @@ function App() {
    }, [running]);
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen'>
+    <div className='flex flex-col items-center justify-center min-h-screen border'>
     <h1 className='text-lg font-semibold'>Hello Kitty Stopwatch</h1>
     <div className='text-xl font-semibold py-4'>
       <span>{("0" + Math.floor((time/60000) % 60)).slice(-2)}:</span>
