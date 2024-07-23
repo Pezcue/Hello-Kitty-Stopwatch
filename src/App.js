@@ -18,9 +18,10 @@ function App() {
    }, [running]);
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen border'>
-    <h1 className='text-lg font-semibold'>Hello Kitty Stopwatch</h1>
-    <div className='text-xl font-semibold py-4'>
+    <div className='bg-orange-50 flex flex-col items-center justify-center min-h-screen border-8 border-black'>
+    <h1 className='text-lg font-semibold'>Hello Kitty</h1>
+    <h1 className='text-lg font-semibold'>Stopwatch</h1>
+    <div className='bg-cover bg-[]text-xl font-semibold py-4 border-2 border-black'>
       <span>{("0" + Math.floor((time/60000) % 60)).slice(-2)}:</span>
       <span>{("0" + Math.floor((time/1000) % 60)).slice(-2)}:</span>
       <span>{("0" + ((time/10) % 100)).slice(-2)}</span>
@@ -35,7 +36,7 @@ function App() {
         </button>
     ) : (
       <button
-      className='border rounded-lg py-1 px-3'
+      className='bg-red-600 border rounded-lg py-1 px-3'
        onClick={()=>{setRunning(true)}}
        >
         Start
@@ -43,7 +44,7 @@ function App() {
     )
     }
       <button
-      className='border rounded-lg py-1 px-2'
+      className='bg-red-600 border rounded-lg py-1 px-2'
        onClick={()=>{setTime(0) }
        }
        >
