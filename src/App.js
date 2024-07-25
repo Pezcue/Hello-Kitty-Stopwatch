@@ -19,13 +19,10 @@ function App() {
 
   return (
     <div style={{
-      backgroundImage: "url('./images/hellokitty.png')",
+      backgroundImage: "url('./images/town.png')",
       backgroundPosition: 'center',
-      backgroundSize: 'contain',
+      backgroundSize: '80%',
       backgroundRepeat: 'no-repeat',
-
-      width: '45%',// Adjust the height to your needs
-      height: '450px',    // Adjust the width to your needs
     }}
      className="bg-orange-50 flex flex-col items-center justify-center min-h-screen border-8 border-black">
     <h1 className='text-7xl font-semibold'>The Hello Kitty</h1>
