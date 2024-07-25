@@ -18,10 +18,17 @@ function App() {
    }, [running]);
 
   return (
-    <div className='bg-orange-50 flex flex-col items-center justify-center min-h-screen border-8 border-black'>
+    <div className="bg-orange-50 flex flex-col items-center justify-center min-h-screen border-8 border-black">
     <h1 className='text-lg font-semibold'>Hello Kitty</h1>
     <h1 className='text-lg font-semibold'>Stopwatch</h1>
-    <div className='bg-cover bg-[]text-xl font-semibold py-4 border-2 border-black'>
+    <div style={{
+          backgroundImage: "url('./images/hellokitty.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '45%',// Adjust the height to your needs
+          height: '350px',    // Adjust the width to your needs
+        }}
+        className="text-xl font-semibold py-4 border-2 border-rose-600">
       <span>{("0" + Math.floor((time/60000) % 60)).slice(-2)}:</span>
       <span>{("0" + Math.floor((time/1000) % 60)).slice(-2)}:</span>
       <span>{("0" + ((time/10) % 100)).slice(-2)}</span>
